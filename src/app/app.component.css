@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.list-container {
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2em;
+
+}
+
+.column-container {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+  background-color: RGBA(173,230,250, 0.1);
+}
+
+
+mat-card {
+  margin: 1em;
+}
+
+.list {
+  border: RGBA(173,230,250, 0.7) solid 1px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rebeccapurple;
+}
