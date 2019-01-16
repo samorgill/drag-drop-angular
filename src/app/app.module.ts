@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatCardModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -11,8 +11,8 @@ import {MatCardModule} from '@angular/material';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MatCardModule,
-    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

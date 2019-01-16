@@ -1,13 +1,13 @@
 <div class="container">
   <h1>{{title}}</h1>
-  <p>by <a [href]="website" target="_blank"> Sam Orgill</a></p>
+  <p>For more turorials and courses visit <a [href]="website" target="_blank"> samorgill.com</a></p>
 
   <div class="list-container">
 
-    <div class="todo-container column-container" >
+    <div class="todo-container column-container">
       <div class="list">
         <h2>Tech to learn</h2>
-        <mat-card *ngFor="let todo of todoList">
+        <mat-card *ngFor="let todo of todos">
           <mat-card-header>
             <mat-card-title>{{todo.name}}</mat-card-title>
             <mat-card-subtitle>{{todo.category}}</mat-card-subtitle>
@@ -19,10 +19,10 @@
     <div class="done-container column-container">
       <div class="list">
         <h2>Tech learned</h2>
-        <mat-card *ngFor="let done of doneList">
+        <mat-card *ngFor="let complete of completed">
           <mat-card-header>
-            <mat-card-title>{{done.name}}</mat-card-title>
-            <mat-card-subtitle>{{done.category}}</mat-card-subtitle>
+            <mat-card-title>{{complete.name}}</mat-card-title>
+            <mat-card-subtitle>{{complete.category}}</mat-card-subtitle>
           </mat-card-header>
         </mat-card>
       </div>
@@ -30,3 +30,4 @@
 
   </div>
 </div>
+

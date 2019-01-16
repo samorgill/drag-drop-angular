@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,9 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'Drag & Drop in Angular 7';
-  name = 'Sam Orgill';
   website = 'https://samorgill.com';
 
-  todoList = [
+  todos = [
     {
       name: 'Angular',
       category: 'Web Development'
@@ -29,7 +29,7 @@ export class AppComponent {
     }
   ];
 
-  doneList = [
+  completed = [
     {
       name: 'Android',
       category: 'Mobile Development'
